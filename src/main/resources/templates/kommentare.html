@@ -11,7 +11,7 @@
 <img th:src="@{/images/FuchsIcon.png}" alt="Ein lustiger FuchsIcon">
 <br>
 <form th:action= "@{/Speicherung}" th:object="${text}" method="post">
-  <label for="normalerText">Rechte Schreibweise</label>
+  <label for="normalerText">Überschrift</label>
       <input type="text" id="normalerText" placeholder= "Versuch etwas"> <br>
       <textarea th:field="*{nachricht}" placeholder="Schreib mehr"></textarea>
   <button type="submit">Absenden</button>

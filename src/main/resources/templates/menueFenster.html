@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Menue</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
-    <h2 th:text="${lahoradelJorge}"/>
+    <h1>Jorges Homepage</h1>
+    <img th:src="@{/images/FuchsIcon.png}" alt="Ein lustiger Fuchs">
+    <h3 th:text="|Jorges Zeit: ${lahoradelJorge}|"/>
     <ol>
-      <li>Hier werden alle Jorges Dateien espeichert werden</li>
+      <li>El Josu come arroz</li>
     </ol>
     <ol>
       <li th:each="jorge : ${listevonjorge}" th:text="${jorge}">Es ist meine liste</li>
