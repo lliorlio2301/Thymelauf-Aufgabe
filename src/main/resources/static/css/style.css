@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  flex-direction: column;  /*Die Elemente werden untereinder gestapelt*/
+  justify-content: center; /* Horizontal zentrieren */
+  align-items: center;     /* Vertikal zentrieren */
+  min-height: 100vh;       /* Gesamte Bildschirmhöhe nutzen */
+  margin: 0;
+}
+
+img {
+  width: 200px;  /* Breite auf 200 Pixel festlegen */
+  height: auto;  /* Höhe passt sich automatisch an, damit nichts verzerrt */
+}

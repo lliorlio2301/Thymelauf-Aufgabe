@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOMMENTARE</title>
+</head>
+<body>
+<h1>Kommentare:</h1>
+<img th:src="@{/images/FuchsIcon.png}" alt="Ein lustiger FuchsIcon">
+<br>
+<form th:action= "@{/Speicherung}" th:object="${text}" method="post">
+  <label for="normalerText">Rechte Schreibweise</label>
+      <input type="text" id="normalerText" placeholder= "Versuch etwas"> <br>
+      <textarea th:field="*{nachricht}" placeholder="Schreib mehr"></textarea>
+  <button type="submit">Absenden</button>
+</form>
+  <ul>
+      <li>Jorge</li>
+      <li>Osorio</li>
+  </ul>
+</body>
+</html>
